@@ -6,7 +6,7 @@ We will be exploring the uses of DrRacket. There will be some examples and worki
 
 
 
-Eric Zheng:
+Eric Zheng and Akhil Giridhar:
   Checkers Game
     Define function, create conditionals, have base-cases, and result
 Akhil Giridhar:
@@ -18,3 +18,5 @@ Arvind Kumar:
 Anish Kolan
   Length Code with Java Version
     Define function, create conditionals, having recursion, having the Java version
+    
+    We chose to work on 4 DrRacket programs. One of the programs was a comparison program that compared Java and DrRacket in accomplishing similar tasks. It consisted of tracking the length of a list in DrRacket without using the length function and finding the length of an ArrayList in Java without using the length function in Java. Then, our group wrote programs that would output the nth term of the fibonacci sequence or the nth factorial. The checkers game was a very long program and required complete team effort, but the foremost contributors were Eric Zheng and Akhil Giridhar. The program was essentially a cartesian plane and kept track of a list of coordinates and removed them as actions were performed. However, the addition of images and color made the game appear to be much more than that. All of the programs for this project used recursion. 
