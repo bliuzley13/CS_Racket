@@ -4,13 +4,9 @@
 (require "../include/cs151-image.rkt")
 (require typed/test-engine/racket-tests)
 
-;; Homework 9
-;;
-;; Eric Zheng
-;; ezheng1
-;; Eric Zheng
+;; 
 
-;;;;; data definitions for Lab 2
+;;;;; data definitions 
 (define-type Color (U 'red 'black))
 
 (define-struct Loc
@@ -88,9 +84,9 @@
            (Checkers-pieces checker)))}
     (Checkers sift (Checkers-turn checker) piece)))
 
-;; Problem 1 part c
+
 ( : jump? : Loc Loc -> Boolean)
-;; determines whethr or not a move is a jump
+;; determines whether or not a move is a jump
 (define  (jump? loc-one loc-two)
 (and
 (= (abs (- (Loc-row loc-one) (Loc-row loc-two))) 2)
@@ -126,8 +122,7 @@ pieces))
 [(Checkers _ _ 'none) (error "place-piece: no piece to place")]))
 
 
-;; Problem 1 part a and Problem 2 part a
-;;( : turn? : 
+ 
 ( : valid-move? : Checkers Loc -> Boolean)
 ;; This function takes in a checkers game and a
 ;; location and ouputs whether or not the click-piece can move
@@ -161,7 +156,7 @@ pieces))
                }
             (or (and (loc=? (Loc r c) one-valid) (symbol? one-away))
                 (and (loc=? (Loc r c) two-valid) (symbol? two-away)))))]))
-                 ;; Problem 1 part b and Problem 2 part b and c
+                 
 (: click-board : Checkers Integer Integer Mouse-Event -> Checkers)
 ;; this function is called whenever the mouse does something
 ;; Currently, it adds a piece to the board at the clicked location

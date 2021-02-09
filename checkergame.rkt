@@ -84,7 +84,7 @@
            (Checkers-pieces checker)))}
     (Checkers sift (Checkers-turn checker) piece)))
 
-;; Problem 1 part c
+
 ( : jump? : Loc Loc -> Boolean)
 ;; determines whether or not a move is a jump
 (define  (jump? loc-one loc-two)
@@ -122,7 +122,7 @@ pieces))
 [(Checkers _ _ 'none) (error "place-piece: no piece to place")]))
 
 
-;; Problem 1 part a and Problem 2 part a 
+ 
 ( : valid-move? : Checkers Loc -> Boolean)
 ;; This function takes in a checkers game and a
 ;; location and ouputs whether or not the click-piece can move
@@ -156,7 +156,7 @@ pieces))
                }
             (or (and (loc=? (Loc r c) one-valid) (symbol? one-away))
                 (and (loc=? (Loc r c) two-valid) (symbol? two-away)))))]))
-                 ;; Problem 1 part b and Problem 2 part b and c
+                 
 (: click-board : Checkers Integer Integer Mouse-Event -> Checkers)
 ;; this function is called whenever the mouse does something
 ;; Currently, it adds a piece to the board at the clicked location
@@ -201,7 +201,7 @@ game)]
     (if (= (length pieces-from-list) 0)
         'none
         (first pieces-from-list))))
-;; Problem 3
+
 ( : red? : Piece -> Boolean)
 ;; outputs true if red
 (define (red? c)
@@ -235,7 +235,7 @@ game)]
 ;;; ==== Code for interactivity ====
 ;; Code past this point is used for rendering the game board
 
-;;;;; functions we need from Lab 1
+
 (: draw-square : Integer Image-Color -> Image)
 (define (draw-square size color)
   (overlay
